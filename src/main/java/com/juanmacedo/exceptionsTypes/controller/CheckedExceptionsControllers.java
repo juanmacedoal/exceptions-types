@@ -11,8 +11,24 @@ public interface CheckedExceptionsControllers {
   /**
    * IOException checked by the compiler.
    *
-   * @return String data
+   * @return Description object
    */
   @GetMapping(value = "/ioException")
   Description ioException();
+
+  /**
+   * ClassNotFoundException checked by the compiler.
+   *
+   * @return Description object
+   */
+  @GetMapping(value = "/classNotFoundException")
+  Description classNotFoundException();
+
+  /**
+   * InvocationTargetException checked by the compiler.
+   *
+   * @return Description object
+   */
+  @GetMapping(value = "/invocationTargetException")
+  Description invocationTargetException();
 }
