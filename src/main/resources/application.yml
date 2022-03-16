@@ -1,2 +1,6 @@
 server:
   port: 8082
+
+application:
+  title: Types of Exceptions
+  version: 1.0.0
